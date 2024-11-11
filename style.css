@@ -1,0 +1,175 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .rarity-div {
+    text-align: center;
+    font-weight: bold;
+    width: 999px;
+    visibility: visible;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    position: fixed;
+    left: 50%;
+    z-index: 102;
+    color: black;
+    text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    top: 15%;
+    font-size: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 60px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:not([disabled]):hover {
+    background-color: lightgray;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  #nextButton {
+    font-size: 20px;
+    padding: 10px 30px;
+    position: fixed;
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #collection {
+    font-size: 50px;
+    padding: 0px 20px;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 140px);
+    transform: translateX(-50%);
+  }
+  
+  #items {
+    font-size: 50px;
+    padding: 0px 20px;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% + 156px);
+    transform: translateX(-50%);
+  }
+  
+  #closeCollectionButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #clearbutton {
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #collectbutton {
+    font-size: 20px;
+    position: absolute;
+    width: 200px;
+    transform: translateX(-50%);
+  }
+  
+  #closeCollectionButton img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .index {
+    position: relative;
+  }
+  
+  #indexDataContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 0;
+    z-index: 103;
+    transform: translate(0, 0);
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  #indexDataList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
